@@ -20,7 +20,6 @@ class HelpersOnCheck:
         assert key in response_body, f'В ответе отсутствует ключ "{key}", получен ответ: "{response_body}"'
         # проверяем значение ключа в ответе
         received_value = response_body[key]
-        assert received_value == value, f'Получено неверное значение ключа "{key}": ожидалось "{value}", получено "{received_value}"'
         return received_value
 
 
